@@ -1,0 +1,59 @@
+{
+  "cloud": true,
+  "pages": [
+    
+    "pages/home-page/home-page",
+    "pages/my/my",
+    "pages/order-list/order-list",
+    "pages/add/add",
+    "pages/goods-detail/goods-detail",
+    "pages/logs/logs",
+    "pages/add-detail/add-detail",
+    "pages/search/search",
+    "pages/goods-list/goods-list",
+    "pages/login/login",
+    "pages/register/register"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0BDDB8",
+    "backgroundColor": "#0BDDB8",
+    "navigationBarTitleText": "同济妆缘",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#1aaba8",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home-page/home-page",
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on-b.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "images/nav/add-b.png",
+        "selectedIconPath": "images/nav/add-b.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/nav/my-off.png",
+        "selectedIconPath": "images/nav/my-on-b.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "brickLayout": {
+      "version": "0.2.0",
+      "provider": "wx3c042630f3cdc175"
+    }
+  }
+}

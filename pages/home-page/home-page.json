@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "swiper":"../../components/swiper/swiper",
+        "List":"../../components/List/List",
+        "brickLayout":"plugin://brickLayout/brickLayout"
+    }
+}

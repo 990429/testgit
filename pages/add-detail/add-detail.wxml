@@ -1,0 +1,60 @@
+<!-- pages/add-detail/index.wxml -->
+<view class='container'>
+ <form bindsubmit="res">
+  <view class='block1'>
+ <view class='txt'>添加图片</view>
+<image bindtap='chooseImage'  src='{{imgs}}'></image>
+ <!--<navigator class='img-submit' hover-class='none' bindtap='selectImage' wx:if="{{!imgList.length}}">
+      <image class="img" src="/images/camera.png"></image>
+      <view class='txt'>添加图片</view>  
+    </navigator>
+    <view class='img-container' wx:if="{{imgList.length}}">
+      <view wx:for="{{imgList}}" wx:if="{{index<9}}" class='avatar'>
+        <image class="img" data-index="{{index}}" name="imag" bindtap="previewImg" src="{{item.img}}"></image>2
+        <view class="bg-red del-btn" catchtap="deleteImg" data-index="{{index}}">
+          <text class="cuIcon-close"></text>
+        </view>
+      </view>
+      <navigator class='img-add' bindtap='selectImage' wx:if="{{imgList.length<9}}">
+        <image class="img" src="/images/camera.png"></image>
+        <view class='txt'>添加图片{{imgList.length}}/9</view>
+      </navigator>
+    </view>-->
+  </view>
+
+
+  <view class='block2'>
+    <view class='title-block'>
+      <input class="title-input" name="title"  placeholder-style="font-weight:500" data-obj="title" bindinput='adInputChange' value='{{title}}' placeholder='在此填写宝贝名称，如：“口红”' maxlength='30' />
+    </view>
+
+    <view class='description-block'>
+      <textarea name='descripe'auto-height class="description-input" value='{{descripe}}' data-obj="descripe" bindinput='adInputChange' placeholder="在此描述你的宝贝：如品牌，规格，成色，购买渠道，转手原因等"></textarea>
+    </view>
+  </view>
+
+
+  <view class='block3'>
+    <view class='price-block'>
+      <view>参考价格：￥</view>
+      <view class='price'>
+        <input class='price-inpuit' name="price" data-obj="price" bindinput='adInputChange' type='digit' placeholder='' value='{{price}}' />
+      </view>
+    </view>
+
+    <view class='type-block'>
+      <view class="cu-form-group">
+        <view class="title">类型选择</view>
+        <picker bindchange="PickerChange" name="picker" value="{{type_index-1}}" range="{{picker}}">
+          <view class="picker">{{type_index?picker[type_index-1]:'请选择类型'}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='submit-container'>
+    <button class='submit' form-type='submit'>发布</button> 
+  </view>
+</form>
+</view>
